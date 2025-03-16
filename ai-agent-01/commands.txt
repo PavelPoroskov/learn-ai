@@ -1,0 +1,7 @@
+source
+https://www.freecodecamp.org/news/make-llms-better-at-math-with-ai-agents/
+npm init -y 
+npx gitignore node
+npm i mathjs
+
+
