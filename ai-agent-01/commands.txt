@@ -11,3 +11,8 @@ npx baseai@latest pipe
     Description: An AI agent pipe that can call tools
     Status: Private
     System prompt: You are a helpful AI assistant
+
+// create tool
+npx baseai@latest tool
+    Name: Calculator
+    Description: Evaluate mathematical expressions
