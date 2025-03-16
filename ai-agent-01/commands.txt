@@ -16,3 +16,11 @@ npx baseai@latest pipe
 npx baseai@latest tool
     Name: Calculator
     Description: Evaluate mathematical expressions
+
+npm i ora inquirer chalk
+
+// run the AI agent pipe locally
+npx baseai@latest dev
+
+npx tsx index.ts --env-file=.env
+Question: What is 120 cm in feet?
