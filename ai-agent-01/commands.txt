@@ -4,4 +4,10 @@ npm init -y
 npx gitignore node
 npm i mathjs
 
-
+// create pipe
+npx baseai@latest pipe
+    Would you like to install it? Yes
+    Name: pipe-with-tool
+    Description: An AI agent pipe that can call tools
+    Status: Private
+    System prompt: You are a helpful AI assistant
