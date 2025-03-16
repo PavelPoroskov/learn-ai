@@ -1,4 +1,5 @@
 import { PipeI } from '@baseai/core';
+import toolCalculator from '../tools/calculator';
 
 const pipePipeWithTool = (): PipeI => ({
 	// Replace with your API key https://langbase.com/docs/api-reference/api-keys
@@ -22,7 +23,7 @@ const pipePipeWithTool = (): PipeI => ({
 	messages: [{ role: 'system', content: `You are a helpful AI assistant that will work as a calculator.`  }],
 	variables: [],
 	memory: [],
-	tools: []
+	tools: [ toolCalculator() ],
 });
 
 export default pipePipeWithTool;
