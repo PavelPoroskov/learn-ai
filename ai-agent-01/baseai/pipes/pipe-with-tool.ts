@@ -19,7 +19,7 @@ const pipePipeWithTool = (): PipeI => ({
 	stop: [],
 	tool_choice: 'auto',
 	parallel_tool_calls: true,
-	messages: [{ role: 'system', content: `You are a helpful AI assistant.` }],
+	messages: [{ role: 'system', content: `You are a helpful AI assistant that will work as a calculator.`  }],
 	variables: [],
 	memory: [],
 	tools: []
