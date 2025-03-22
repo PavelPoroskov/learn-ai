@@ -1,0 +1,40 @@
+FAQ
+Let's take a look at some frequently asked questions about Pipe.
+
+What is a Pipe?
+Pipe is a high-level layer to Large Language Models (LLMs) that creates a personalized AI assistant for your queries. It can leverage any LLM models, tools, and knowledge with your datasets to assist with your queries.
+
+What is a System Prompt Instruction?
+Initial setup or instruction for the LLM that configures or instructs the LLM on how to behave.
+
+What is a User Prompt?
+A text input that a user provides to an LLM to which the model responds.
+
+What is an AI Prompt?
+The LLM's generated output in response to a user prompt.
+
+How to run Playground in Pipe?
+Assuming the Pipe API keys are configured:
+
+    Select any LLM model. By default OpenAI gpt-4o-mini is selected.
+    If the Pipe is of type generate, simply run it.
+    If it is a chat pipe, write hello in Playground and run the Pipe.
+
+Can I add readme to a pipe?
+Yes, you can add readme to any Pipe.
+
+When you create a Pipe, it already contains a readme. Go all the way down in a Pipe. You will find a readme there. Simply edit it.
+
+Can I run experiments on a chat Pipe?
+No, only generate type Pipes can run experiments.
+
+Where can I find the Pipe API key?
+Navigate to the API tab in the Pipe navbar. Here you will find Pipe API secret.
+
+Does each Pipe have its own API key?
+Yes, every Pipe you create on Langbase contains its unique API key.
+
+Pipe Playground is not running. How can I fix it?
+Check if you have configured the LLM API key for your selected model.
+Try providing a user prompt if you are not providing it already.
+
