@@ -10,3 +10,9 @@ npx baseai@latest pipe
     description: Pipe attached to a memory
     Status: Private
     System prompt: You are helpful AI assistant
+
+npx baseai@latest memory
+    Name:  chat-with-docs-agent
+    Description: FAQs docs
+    Do you want to create memory from the current project git repository? No
+        Add documents in baseai/memory/chat-with-docs-agent/documents to use them in the memory.
