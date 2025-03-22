@@ -1,3 +1,12 @@
+source
+https://www.freecodecamp.org/news/how-to-use-langbase-memory-agents/
+
 mkdir ai-agent-memory
 cd $_
 
+npx baseai@latest pipe
+    install: Yes
+    name: pipe-with-memory
+    description: Pipe attached to a memory
+    Status: Private
+    System prompt: You are helpful AI assistant
