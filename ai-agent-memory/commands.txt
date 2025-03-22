@@ -22,3 +22,11 @@ npx baseai@latest memory
 //generate embeddings
 npx baseai@latest embed -m chat-with-docs-agent
     // Error: PermissionDeniedError: 403 Country, region, or territory not supported
+
+//start server
+npx baseai@latest dev
+
+// start ui-cli
+npx tsx index.ts --env-file=.env
+
+Question: What is a pipe on Langbase?

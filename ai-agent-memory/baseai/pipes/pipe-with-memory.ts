@@ -1,4 +1,5 @@
 import { PipeI } from '@baseai/core';
+import chatWithDocsAgentMemory from '../memory/chat-with-docs-agent';
 
 const pipePipeWithMemory = (): PipeI => ({
 	// Replace with your API key https://langbase.com/docs/api-reference/api-keys
@@ -21,7 +22,7 @@ const pipePipeWithMemory = (): PipeI => ({
 	parallel_tool_calls: true,
 	messages: [{ role: 'system', content: `You are a helpful AI assistant.` }],
 	variables: [],
-	memory: [],
+	memory: [chatWithDocsAgentMemory()],
 	tools: []
 });
 
