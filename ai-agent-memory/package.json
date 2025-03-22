@@ -11,7 +11,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@baseai/core": "^0.9.43"
+    "@baseai/core": "^0.9.43",
+    "chalk": "^5.4.1",
+    "inquirer": "^12.5.0",
+    "ora": "^8.2.0"
   },
   "devDependencies": {
     "baseai": "^0.9.43"
