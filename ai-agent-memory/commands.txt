@@ -16,3 +16,9 @@ npx baseai@latest memory
     Description: FAQs docs
     Do you want to create memory from the current project git repository? No
         Add documents in baseai/memory/chat-with-docs-agent/documents to use them in the memory.
+
+// add document to baseai/memory/chat-with-docs-agent/documents
+
+//generate embeddings
+npx baseai@latest embed -m chat-with-docs-agent
+    // Error: PermissionDeniedError: 403 Country, region, or territory not supported
