@@ -2,9 +2,12 @@ import { Pipe } from '@baseai/core';
 import inquirer from 'inquirer';
 import ora from 'ora';
 import chalk from 'chalk';
-import pipe0 from './baseai/pipes/pipe0';
 
-const pipe = new Pipe(pipe0());
+// import pipe0 from './baseai/pipes/pipe0';
+// const pipe = new Pipe(pipe0());
+
+import pipeEmailGeneratorAgent from './baseai/pipes/email-generator-agent';
+const pipe = new Pipe(pipeEmailGeneratorAgent());
 
 async function main() {
 

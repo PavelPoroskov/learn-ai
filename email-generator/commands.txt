@@ -18,3 +18,10 @@ Do you want to create memory from the current project git repository? No
 // generate embeddings
 npx baseai@latest embed -m email-generator-memory
 
+// to start the BaseAI server first
+npx baseai@latest dev
+
+// run agnet
+npx tsx index.ts
+
+prompt: Here’s the job description, draft the email: <description>
