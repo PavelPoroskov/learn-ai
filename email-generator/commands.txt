@@ -1,3 +1,20 @@
 mkdir ai-agent-memory
 cd $_
 
+npx baseai@latest pipe
+BaseAI is not installed but required to run. Would you like to install it?: Yes
+Name of the pipe?: email-generator-agent
+Description of the pipe?: Generates emails for your dream job in seconds
+Status of the pipe?: Private
+System prompt?: You are a helpful AI assistant
+
+npx baseai@latest memory
+Name of the memory? email-generator-memory
+Description of the memory? Contains my resume
+Do you want to create memory from the current project git repository? No
+
+// add resume (only format markdown?) to baseai/memory/email-generator-memory/documents
+
+// generate embeddings
+npx baseai@latest embed -m email-generator-memory
+

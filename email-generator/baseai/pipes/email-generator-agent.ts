@@ -1,4 +1,5 @@
 import { PipeI } from '@baseai/core';
+import emailGeneratorMemoryMemory from '../memory/email-generator-memory';
 
 const pipeEmailGeneratorAgent = (): PipeI => ({
 	// Replace with your API key https://langbase.com/docs/api-reference/api-keys
@@ -19,9 +20,12 @@ const pipeEmailGeneratorAgent = (): PipeI => ({
 	stop: [],
 	tool_choice: 'auto',
 	parallel_tool_calls: true,
-	messages: [{ role: 'system', content: `You are a helpful AI assistant.` }],
+	messages: [{
+		role: 'system', 
+		content: `Based on the job description and my resume attached, write a compelling cold email tailored to the job, highlighting my most relevant skills, achievements, and experiences. Ensure the tone is professional yet approachable, and include a strong call to action for a follow-up or interview.`,
+	}],
 	variables: [],
-	memory: [],
+	memory: [emailGeneratorMemoryMemory()],
 	tools: []
 });
 
